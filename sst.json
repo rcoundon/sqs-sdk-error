@@ -1,0 +1,5 @@
+{
+  "name": "sqs-sdk-error",
+  "region": "eu-west-2",
+  "main": "stacks/index.ts"
+}

@@ -1,0 +1,41 @@
+{
+  "name": "sqs-sdk-error",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "tsc": "tsc",
+    "start": "AWS_PROFILE=leadent-dev sst start --stage dev --region eu-west-2 --increase-timeout",
+    "build": "AWS_PROFILE=leadent-dev sst build --stage dev --region eu-west-2",
+    "deploy": "AWS_PROFILE=leadent-dev sst deploy --stage dev --region eu-west-2",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit",
+    "test": "sst load-config -- vitest run"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "3.224.0",
+    "@aws-sdk/client-s3": "3.224.0",
+    "@aws-sdk/client-sqs": "3.224.0",
+    "@aws-sdk/client-ssm": "3.224.0",
+    "@aws-sdk/lib-dynamodb": "3.224.0",
+    "@aws-sdk/s3-request-presigner": "3.224.0",
+    "@aws-sdk/types": "3.224.0",
+    "@aws-sdk/util-dynamodb": "3.224.0",
+    "@serverless-stack/cli": "1.15.16",
+    "@serverless-stack/resources": "1.15.16",
+    "@thundra/core": "2.13.53",
+    "@types/aws-lambda": "8.10.109",
+    "@types/lodash": "4.14.191",
+    "@types/luxon": "3.1.0",
+    "@types/nano-cache": "^1.1.2",
+    "@types/node": "18.11.11",
+    "aws-cdk-lib": "2.39.1",
+    "dynamodb-onetable": "2.5.1",
+    "lodash": "4.17.21",
+    "luxon": "3.1.1",
+    "nano-cache": "1.1.2",
+    "prettier": "2.8.0",
+    "typescript": "4.9.3",
+    "vitest": "0.25.5"
+  }
+}
