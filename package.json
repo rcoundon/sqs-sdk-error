@@ -7,7 +7,7 @@
     "start": "AWS_PROFILE=leadent-dev sst start --stage dev --region eu-west-2 --increase-timeout",
     "build": "AWS_PROFILE=leadent-dev sst build --stage dev --region eu-west-2",
     "deploy": "AWS_PROFILE=leadent-dev sst deploy --stage dev --region eu-west-2",
-    "remove": "sst remove",
+    "remove": "AWS_PROFILE=leadent-dev sst remove --stage dev --region eu-west-2",
     "console": "sst console",
     "typecheck": "tsc --noEmit",
     "test": "sst load-config -- vitest run",
